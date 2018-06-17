@@ -31,7 +31,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('http://localhost:3000/tickets')
+    fetch('http://localhost:3030/tickets')
       .then(res => res.json())
       .then(tickets => {
         this.setState({ tickets });
